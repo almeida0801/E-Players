@@ -95,7 +95,7 @@ header img{
 .banner{
     width: 100%;
     height: 400px;
-    background-image: url("../images/Imagens\ \(1\)/img/meta_mundo.jpg");
+    background-image: url("../images/img/meta_mundo.jpg");
     background-position: center;
     background-size: cover;
     display: flex;
@@ -123,12 +123,44 @@ header img{
 .ligas div{
     margin-bottom: 35px;
 }
-.sobre{
-    background-image: url("../images/Imagens\ \(1\)/img/T6.jpg");
+.sobre_fundo{
+    background-image: url("../images/img/Teams/T6.jpg");
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
     width: 100%;
-    min-height: 200px;
+    min-height: 700px;
     clip-path:  polygon(0 10%, 100% 6%, 100% 90%, 0 100%);
+  
+}
+.sobre_fundo_filtro{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(114,120,195,0.5);
+}
+.sobre{
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+}
+.sobre img{
+    position: absolute;
+    z-index: 99;
+    top: -20px;
+    left: 100px;
+    width: 100%;
+    max-width: 35%;
+}
+.texto_sobre{
+    width: 40%;
+    margin-right: 100px;
+    text-align: right;
+    text-shadow: 0px 3px 3px black;
+    font-size: 20px;
+}
+.texto_sobre h2{
+    margin-bottom: 2em;
 }
