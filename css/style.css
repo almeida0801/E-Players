@@ -358,7 +358,9 @@ select{
     margin: auto;
     margin-top: 2em;
 }
-
+header .fa-bars{
+    display: none;
+}
 /* início responsividade */
 /* 800px */
 @media(max-width: 800px){
@@ -415,7 +417,36 @@ select{
 
 /* Media Query 460px */
 @media(max-width: 460px){
-    
+    header .fa-bars{
+        color: var(--purple);
+        font-size: 3em;
+        display: block;
+    }
+    header .container div a{
+        margin-left: 7em;
+    }
+    header .container div{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    #menu{
+        position: absolute;
+        top: 5.5em;
+        width: 100%;
+        background-color: var(--purple);
+        left: 0;
+        display: none;
+    }
+    #menu ul{
+        flex-direction: column;
+        height: 300px;
+        margin-left: 1em;
+    }
+    #menu a{
+        display: block;
+        padding: 0.5em 0;
+    }
 }
 /* Fim Media Query 460px */
 
