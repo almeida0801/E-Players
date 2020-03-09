@@ -128,6 +128,11 @@ header img{
 .ligas div{
     margin-bottom: 35px;
 }
+.ligas_imagens{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
 .sobre_fundo{
     background-image: url("../images/img/Teams/T6.jpg");
     background-position: center;
@@ -423,7 +428,7 @@ header .fa-bars{
         display: block;
     }
     header .container div a{
-        margin-left: 7em;
+        margin-left: 4em;
     }
     header .container div{
         display: flex;
@@ -447,6 +452,75 @@ header .fa-bars{
         display: block;
         padding: 0.5em 0;
     }
+    .partidas .container{
+        width: 97%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .em_andamento{
+        width: 37%;
+        align-self: flex-start;
+        margin-left: 1em;
+    }
+    .proximas_partidas{
+        width: 90%;
+    }
+    .partida img{
+        width: 30px;
+        padding: 0 10px;
+    }
+    .banner{
+        height: 250px;
+    }
+    .banner img{
+        max-width: 100px;
+    }
+    .ligas{
+        flex-direction: column;
+    }
+    .ligas div:nth-child(1){
+        display: flex;
+    }
+    .ligas h3, .ligas h4{
+        font-size: 2em;
+        line-height: 20px;
+        margin-right: 0.5em;
+    }
+    .sobre img{
+        display: none;
+    }
+    .texto_sobre{
+        width: 90%;
+    }
+    .content{
+        flex-direction: column;
+        width: 90%;
+    }
+    .content article{
+        width: 100%;
+    }
+    .card{
+        flex-direction: column;
+        margin-bottom: 1em;
+    }
+    .card img{
+        width: 100%;
+        margin-left: 0;
+    }
+    .card div{
+        padding: 1em;
+    }
+    .content section{
+        width: 90%;
+        margin: auto;
+    }
+    footer .container{
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 1em;
+    }
+
 }
 /* Fim Media Query 460px */
 
